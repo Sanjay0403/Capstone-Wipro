@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #f1f8ff);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Text */
+.welcome-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  color: #2c3e50;
+  text-align: right;
+  margin: 10px 20px;
+  padding: 5px 15px;
+  border-left: 4px solid #2c3e50;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+/* Title */
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e2a38;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Summary Card */
+.summary-card {
+  background: linear-gradient(135deg, #022c2c 0%, #131414 50%, #358787 100%);
+  color: white;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.summary-card h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-size: 1.2rem;
+}
+
+.summary-card h4,
+.summary-card p {
+  font-family: 'Poppins', sans-serif; /* Clean & Modern Font */
+  font-weight: 600;
+}
+/* Income & Expense Styling */
+.positive {
+  color: #30f01f;
+  font-weight: bold;
+}
+
+.negative {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.income-text {
+  color: #55f036;
+  font-weight: bold;
+}
+
+.expense-text {
+  color: #f9230b;
+  font-weight: bold;
+}
+
+/* Finance Form */
+.finance-form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 153, 255, 0.6);
+}
+
+/* Finance Table */
+.finance-table {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.finance-table th {
+  background: #2b353b;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.finance-table td {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.finance-table tbody tr:hover {
+  background: rgba(0, 153, 255, 0.15);
+  transition: 0.3s;
+}
+
+/* Action Buttons */
+.action-btn {
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Charts */
+.charts-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.charts-container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1e2a38;
+}
+
+/* Sorting Dropdown */
+/* Sort Toggle */
+/* Sort Dropdown Styling */
+.sort-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sort-dropdown {
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #0b1219;
+  border-radius: 8px;
+  appearance: none; /* Hide default arrow */
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Space for custom arrow */
+}
+
+/* Custom Arrow */
+.sort-toggle::after {
+  font-size: 0.9rem;
+  color: #007bff;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents click */
+}
+
+
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.filter-buttons button {
+  min-width: 130px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.filter-buttons .btn-primary {
+  background: #2b74a4;
+}
+
+.filter-buttons .btn-primary:hover {
+  background: #007acc;
+}
+
+.filter-buttons .btn-secondary {
+  background: #6c757d;
+}
+
+.filter-buttons .btn-secondary:hover {
+  background: #5a6268;
+}
+
+.filter-buttons .btn-success {
+  background: #28a745;
+}
+
+.filter-buttons .btn-success:hover {
+  background: #218838;
+}
+
+.filter-buttons .btn-dark {
+  background: #343a40;
+}
+
+.filter-buttons .btn-dark:hover {
+  background: #23272b;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;  /* Add this to create space */
+  margin-bottom: 15px;
+}
+/* Pagination */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  background: #0e1418;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination-controls button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 10px;
+}

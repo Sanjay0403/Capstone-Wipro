@@ -1,0 +1,101 @@
+/* Footer Styling */
+.footer {
+  background: #1c1f26;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Ensure it's not fixed */
+}
+
+/* Footer Links */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #19c9f1;
+}
+
+/* Copyright Text */
+.footer-text {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Social Media */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Social Media Icons */
+.footer-social a {
+  color: white;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #19c9f1;
+  transform: scale(1.2);
+}
+
+/* Socials Text */
+.social-text {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Brand Name & Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular logo */
+}
+
+/* FinTracker text beside the logo */
+.brand-name {
+  font-weight: bold;
+  font-size: 1.5rem;  /* Increased size */
+  color: #f8f7f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .footer-social {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .brand-logo {
+      margin-left: 0;
+  }
+
+  .brand-name {
+      font-size: 1.2rem; /* Slightly smaller for mobile */
+  }
+
+  .footer-logo {
+      width: 35px;
+      height: 35px;
+  }
+}

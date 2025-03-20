@@ -1,0 +1,59 @@
+/* Center the login form */
+.login-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+/* Card Styling */
+.login-card {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: #cbd5d5;
+}
+
+/* Input fields */
+.form-control {
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: #f4efef;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004089);
+}
+
+/* Register Link */
+
+.register-link {
+  color: #007bff !important; /* Change to a visible blue */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #0056b3 !important; /* Darker shade on hover */
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 90%;
+  }
+}

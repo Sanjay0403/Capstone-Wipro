@@ -1,0 +1,80 @@
+/* Hero Section with Background Image */
+.home-container {
+    padding: 120px 20px;
+    text-align: center;
+    background: url("../assets/img.png") center/cover no-repeat;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Ensures the blur effect doesn't leak out */
+}
+
+/* Overlay to Dim and Blur Background */
+.home-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slightly dim overlay */
+    backdrop-filter: blur(3px) brightness(1.1); /* Blur and brighten effect */
+    border-radius: 10px;
+}
+
+/* Ensure Content is Above Overlay */
+.home-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Title */
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adds shadow for visibility */
+}
+
+/* Hero Subtitle */
+.home-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* CTA Button */
+.cta-button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: #1ecee2;
+    border: none;
+    color: black;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #19c9f1;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2.2rem;
+    }
+
+    .services-title {
+        font-size: 2rem;
+    }
+}

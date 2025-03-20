@@ -1,0 +1,76 @@
+/* Support Page Container */
+.support-container {
+    padding: 60px 20px;
+    text-align: center;
+    background: #eae9e9;
+    min-height: 80vh;
+}
+
+/* Title & Subtitle */
+.support-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.support-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Cards */
+.support-card {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* Support Button */
+.support-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.support-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004089);
+    transform: scale(1.05);
+}
+
+/* FAQ Card */
+.faq-card {
+    padding: 25px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.faq-card h5 {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.faq-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .support-title {
+        font-size: 2rem;
+    }
+
+    .support-subtitle {
+        font-size: 1rem;
+    }
+}

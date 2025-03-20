@@ -1,0 +1,140 @@
+/* Navbar styling */
+.navbar {
+  background: #1c1f26;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Brand logo and text */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8f9fa !important;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+.navbar-brand:hover {
+  color: #12b4ca !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #19c9f1 !important;
+  background: rgba(122, 189, 215, 0.2);
+  border-radius: 5px;
+}
+
+/* Active Link */
+.navbar-nav .nav-item.active .nav-link {
+  color: #22c8de !important;
+  font-weight: bold;
+}
+
+/* Authentication buttons */
+.auth-buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Login & Register Buttons */
+.login-btn,
+.register-btn {
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  text-decoration: none;
+  color: white !important;
+  background: none;
+  border: none;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+  color: #1ecee2 !important;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #b02a37;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .auth-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px 15px; /* Adjusted padding for small screens */
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem; /* Slightly smaller font */
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  .navbar-nav {
+    text-align: center; /* Centers links when collapsed */
+  }
+
+  .nav-item {
+    margin-bottom: 8px; /* Adds spacing between nav items */
+  }
+
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-btn,
+  .register-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
